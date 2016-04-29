@@ -1,0 +1,51 @@
+
+<ion-view view-title="Shop" >
+  <ion-content class="padding">
+    <h2>This is shop</h2>
+    <p>
+      <button ng-click="openPopover($event)">popover功能Demo</button>
+    </p>
+    <ion-list>
+      <ion-item ng-repeat="love in loves" class="item-thumbnail-left item-text-wrap">
+        <img ng-src="{{love.src}}">
+        <h2>{{love.title}}</h2>
+        <p >{{love.body}}</p>
+        <span>{{love.price_now}}   <del>{{love.price_old}}</del></span>
+        <ion-option-button class="button-positive"
+                           ng-click="share(item)">
+          分享
+        </ion-option-button>
+        <ion-option-button class="button-info"
+                           ng-click="edit(item)">
+          编辑
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+<script id="my-popover.html" type="text/ng-template">
+  <ion-popover-view>
+    <ion-header-bar class="bar-balanced">
+      <h1 class="title">My Popover Title</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item></ion-item>
+        <ion-item ng-repeat="love in loves" class="item-thumbnail-left item-text-wrap" >
+        <img ng-src="{{love.src}}">
+        <h2>{{love.title}}</h2>
+        <p >{{love.body}}</p>
+        <span>{{love.price_now}}   <del>{{love.price_old}}</del></span>
+        <ion-option-button class="button-positive"
+                           ng-click="share(item)">
+          分享
+        </ion-option-button>
+        <ion-option-button class="button-info"
+                           ng-click="edit(item)">
+          编辑
+        </ion-option-button>
+      </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-popover-view>
+</script>

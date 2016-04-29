@@ -1,0 +1,150 @@
+/* Empty. Add your own CSS if you like */
+a{
+  text-decoration: none;
+  color: #000;
+  font-family: 微软雅黑;
+}
+.row{
+  background-color: #FFFFFF;
+}
+/*.item{*/
+  /*padding:0 !important;*/
+/*}*/
+#nav_input .header-input{
+  display: block;
+  margin:0 auto;
+}
+.item-input-wrapper{
+  -webkit-border-radius:20px !important;
+  -moz-border-radius:20px !important;
+  border-radius:20px !important;
+}
+#home_content{
+  background-color: #e5e5e5;
+}
+#home_nav .row{
+  background-color: #ffffff;
+}
+#home_nav a{
+  font-size:0.8rem ;
+  display: block;
+  line-height: 0.8rem;
+}
+#home_nav img{
+  display: block;
+  width:40px;
+  height:40px;
+  margin:0 auto 0.4rem auto;
+}
+#home_nav p{
+  display: block;
+  text-align:center;
+}
+#home_nav .slider-pager{
+  bottom:0 !important;
+  height: 18px;
+}
+#home_nav .slider-pager span{
+  font-size: 0.2rem;
+}
+#content .row{
+  background-color: #fff;
+}
+#content{
+  margin-top:3%;
+}
+#content .row .col-33{
+  border-right:0.1rem solid rgba(143,143,143,0.3);
+}
+#content .logo img{
+  width:30%;
+}
+#content .shop img{
+  width:60%;
+  display: block;
+  margin:0.4rem auto;
+}
+#content .shop span{
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  line-height:1.5rem;
+}
+#content .price span{
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+  color: orange;
+}
+#content .price span del{
+  display: inline-block;
+  margin-left:0.2rem;
+  color: #4b8bf4;
+  font-size: 0.7rem;
+}
+#oneYuan{
+  background-color: #FFF;
+  margin-top:3%;
+}
+#oneYuan .oneYuan_hanberge{
+  padding:0 !important;
+}
+#oneYuan p{
+  position: relative;
+  color: red;
+  font-size: 1.4rem;
+  line-height: 1.4rem;;
+  top:0.9rem;
+  left:8%;
+  font-family: 微软雅黑;
+}
+#oneYuan  p span{
+  display: block;
+  font-size: 1rem;
+  color: darkgrey;
+  line-height:2rem;
+}
+#oneYuan .hanberge{
+  width:100%;
+  height:5rem;
+}
+#youLove{
+  margin-top:3%;
+}
+
+#youLove h3{
+  font-family:微软雅黑;
+  font-size: 1rem;
+  line-height:1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+#youLove .loveList{
+  background-color: #fff;
+}
+#youLove .loveList .loveText {
+  padding-left: 3%;
+}
+#youLove .loveList .loveText h1{
+  font-size:1rem;
+  line-height:1rem;
+}
+#youLove .loveList .loveText p{
+  font-size:0.6rem;
+  line-height:0.8rem;
+  color: darkgrey;
+}
+#youLove .loveList span{
+  font-size: 1.2rem;
+  color: orange;
+}
+#youLove .loveList span del{
+  display: inline-block;
+  font-size:1rem;
+  color: #4b8bf4;
+  margin-left: 3%;
+}
+#youLove .loveList .more{
+  text-align: center;
+  padding: 10px !important;
+}
