@@ -16,8 +16,8 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('ShopCtrl', function($scope,loves,$ionicPopover) {
-  $scope.loves = loves;
+.controller('ShopCtrl', function($scope,popData,$ionicPopover) {
+  $scope.popData = popData;
   $ionicPopover.fromTemplateUrl('my-popover.html', {
     scope: $scope
   }).then(function(popover) {

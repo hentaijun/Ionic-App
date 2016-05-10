@@ -35,4 +35,21 @@ angular.module('starter.services', [])
   price_old:'79.9元',
   page:'#'
 }]
-);
+)
+  .value('popData',[{
+    title:'弹窗标题',
+    body:'弹窗内容弹窗内容弹窗内容'
+  },{
+    title:'弹窗标题',
+    body:'弹窗内容弹窗内容弹窗内容'
+  },{
+    title:'弹窗标题',
+    body:'弹窗内容弹窗内容弹窗内容'
+  },{
+    title:'弹窗标题',
+    body:'弹窗内容弹窗内容弹窗内容'
+  },{
+    title:'弹窗标题',
+    body:'弹窗内容弹窗内容弹窗内容'
+  }
+  ]);
