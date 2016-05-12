@@ -103,8 +103,32 @@ angular.module('starter.controllers', [])
 .controller('MoreCtrl',function($scope){
 
 })
-.controller('FoodCtrl',function($scope){
+.controller('FoodCtrl',function($scope,$ionicActionSheet){
+  $scope.buttonData = "My button";
+  $scope.show = function(){
+      $ionicActionSheet.show({
+        buttons:[
+          { text:"<b>分享</b>"},
+          { text:"移动"},
+        ],
+        destructiveText:'删除',
+        titleText:'这是一个操作表',
+        cancelText:'取消',
+        buttonClicked:function(index){
+          $scope.buttonData = "Share";
+          return true;
+        },
+        cancel:function(){
+          $scope.buttonData = "Bye Bye";
+          return true;
+        },
+        destructiveButtonClicked:function(){
+          $scope.hidden = true;
+          return true;
+        }
 
+      });
+    };
 });
 
 
