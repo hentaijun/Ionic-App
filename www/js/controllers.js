@@ -46,13 +46,13 @@ angular.module('starter.controllers', [])
     // 一个精心制作的自定义弹窗
     var myPopup = $ionicPopup.show({
       template: '<input type="password" ng-model="data.wifi">',
-      title: 'Enter Wi-Fi Password',
+      title: '请输入wifi密码',
       subTitle: 'Please use normal things',
       scope: $scope,
       buttons: [
         { text: 'Cancel' },
         {
-          text: '<b>Save</b>',
+          text: '<b>保存</b>',
           type: 'button-positive',
           onTap: function(e) {
             if (!$scope.data.wifi) {
@@ -100,12 +100,14 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('MoreCtrl',function($scope){
-
+.controller('MoreCtrl',function($scope,$ionicSideMenuDelegate){
+  $scope.toggleLeftSideMenu = function(){
+    $ionicSideMenuDelegate.toggleLeft();
+  }
 })
 .controller('FoodCtrl',function($scope,$ionicActionSheet){
   $scope.buttonData = "My button";
-  $scope.show = function(){
+  $scope.showAction = function(){
       $ionicActionSheet.show({
         buttons:[
           { text:"<b>分享</b>"},
