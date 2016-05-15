@@ -13,7 +13,10 @@ angular.module('starter.controllers', [])
         price_old:'79.9元'
       });
     }
-  }
+  };
+  $scope.share = function(item){
+    alert("你分享了");
+  };
 })
 
 .controller('ShopCtrl', function($scope,popData,$ionicPopover) {
@@ -101,9 +104,9 @@ angular.module('starter.controllers', [])
 })
 
 .controller('MoreCtrl',function($scope,$ionicSideMenuDelegate){
-  $scope.toggleLeftSideMenu = function(){
-    $ionicSideMenuDelegate.toggleLeft();
-  }
+  //$scope.toggleLeftSideMenu = function(){
+  //  $ionicSideMenuDelegate.toggleLeft();
+  //}
 })
 .controller('FoodCtrl',function($scope,$ionicActionSheet){
   $scope.buttonData = "My button";

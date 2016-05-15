@@ -1,11 +1,10 @@
-
 <ion-view view-title="Home" id="home_content">
   <ion-nav-title>
     <ion-header-bar class="item-input-inset" id="nav_input">
       <div class="header-input">
         <label class="item-input-wrapper" >
           <i class="icon ion-ios-search placeholder-icon"></i>
-          <input  type="search" placeholder="请输入商家、商品">
+          <input  type="search" placeholder="请输入商家、商品" disabled>
         </label>
       </div>
     </ion-header-bar>
@@ -119,12 +118,12 @@
           <p >{{love.body}}</p>
           <span>{{love.price_now}}   <del>{{love.price_old}}</del></span>
           <ion-option-button class="button-positive"
-                             ng-click="share(item)">
+                             ng-click="share(love)">
             分享
           </ion-option-button>
-          <ion-option-button class="button-info"
-                             ng-click="edit(item)">
-            编辑
+          <ion-option-button class="button-assertive"
+                             ng-click="loves.splice($index, 1)">
+            删除
           </ion-option-button>
         </ion-item>
         <ion-item class="more" ng-click="seeMore()">
